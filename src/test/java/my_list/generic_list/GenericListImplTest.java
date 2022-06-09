@@ -118,7 +118,7 @@ class GenericListImplTest {
 
 
         var result = list1.toArray();
-        assertTrue(result instanceof String[]);
+        assertTrue(result instanceof Object[]);
         assertEquals(6,result.length );
 
     }
@@ -137,7 +137,7 @@ class GenericListImplTest {
 
 
         var result = list1.toArray();
-        assertTrue(result instanceof Integer[]);
+        assertTrue(result instanceof Object[]);
         assertEquals(6,result.length );
 
     }

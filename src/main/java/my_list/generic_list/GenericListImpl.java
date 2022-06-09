@@ -57,7 +57,7 @@ public class GenericListImpl<T> implements GenericList<T> {
     }
 
     @Override
-    public T[] toArray() {
+    public Object[] toArray() {
         int nullsCounter = 0;
         for (int i = 0; i < agiArr.length; i++) {
             if (agiArr[i] == null) {
@@ -169,7 +169,7 @@ public class GenericListImpl<T> implements GenericList<T> {
 
     @Override
     public boolean containAll(GenericList<T> list) {
-        return containAll(list.toArray());
+        return containAll((T[]) list.toArray());
     }
 
     @Override

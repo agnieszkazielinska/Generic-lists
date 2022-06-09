@@ -5,7 +5,7 @@ public interface GenericList <T>{
     int length();
     boolean isEmpty();
     boolean isNotEmpty();
-    T[] toArray();
+    Object[] toArray();
     boolean add(T element);
     boolean put(T element, int index);
     boolean remove(T element);
