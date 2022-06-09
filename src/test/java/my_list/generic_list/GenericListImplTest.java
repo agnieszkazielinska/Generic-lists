@@ -382,4 +382,28 @@ class GenericListImplTest {
 
     }
 
+    @Test
+    public void shouldAddAllFromList() {
+        GenericListImpl<String> arr1 = new GenericListImpl<>(6);
+        arr1.add("A");
+        arr1.add("F");
+        arr1.add("D");
+        arr1.add("C");
+        arr1.add("B");
+        arr1.add("G");
+
+        GenericListImpl<String> arr2 = new GenericListImpl<>(3);
+        arr1.add("X");
+        arr1.add("Y");
+        arr1.add("Z");
+
+        arr1.addAll(arr2);
+
+
+        assertEquals(9, arr1.length());
+        assertEquals("X", arr1.get(6));
+
+
+    }
+
 }

@@ -190,7 +190,7 @@ public class GenericListImpl<T> implements GenericList<T> {
 
     @Override
     public boolean addAll(GenericList<T> list) {
-        return false;
+        return addAll((T[]) list.toArray());
     }
 
     @Override
